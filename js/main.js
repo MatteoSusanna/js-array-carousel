@@ -41,8 +41,7 @@ downDom.addEventListener('click',
 
         if (attiva == imgList.length - 1){
             downDom.classList.add('none');
-        }
-     
+        }   
     }
 );
 
