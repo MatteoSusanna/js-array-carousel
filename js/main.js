@@ -24,9 +24,9 @@ imgList[attiva].classList.add('show');
 
 
 
-const rightDom = document.querySelector('.right');
+const downDom = document.querySelector('.down');
 
-rightDom.addEventListener('click',
+downDom.addEventListener('click',
     function () {
 
         imgList[attiva].classList.remove('show');
@@ -37,19 +37,19 @@ rightDom.addEventListener('click',
 
 
       
-        leftDom.classList.remove('none');
+        upDom.classList.remove('none');
 
         if (attiva == imgList.length - 1){
-            rightDom.classList.add('none');
+            downDom.classList.add('none');
         }
      
     }
 );
 
 
-const leftDom = document.querySelector('.left');
+const upDom = document.querySelector('.up');
 
-leftDom.addEventListener('click',
+upDom.addEventListener('click',
     function () {
 
 
@@ -59,10 +59,10 @@ leftDom.addEventListener('click',
 
 
  
-        rightDom.classList.remove('none');
+        downDom.classList.remove('none');
 
         if (attiva == 0){
-            leftDom.classList.add('none');
+            upDom.classList.add('none');
         }
   
 
