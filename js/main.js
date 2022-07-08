@@ -18,8 +18,10 @@ for (let i = 0; i < arrayImg.length; i++ ){
 
 
 const imgList = document.getElementsByClassName('img');
-//non capisco perchè non avrei potuto fare arrayImg[attiva]
+
+
 imgList[attiva].classList.add('show');
+
 
 
 const rightDom = document.querySelector('.right');
@@ -27,13 +29,10 @@ const rightDom = document.querySelector('.right');
 rightDom.addEventListener('click',
     function () {
 
-        //rimuove classe show alla posizione 0
         imgList[attiva].classList.remove('show');
 
-        //grazie a questo incremento +1
         attiva++;
 
-        //la aggiunge alla posizione 1
         imgList[attiva].classList.add('show');
 
 
