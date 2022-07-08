@@ -28,7 +28,7 @@ rightDom.addEventListener('click',
     function () {
 
         //rimuove classe show alla posizione 0
-        imgList[attiva].classList.remuve('show');
+        imgList[attiva].classList.remove('show');
 
         //grazie a questo incremento +1
         attiva++;
@@ -37,15 +37,16 @@ rightDom.addEventListener('click',
         imgList[attiva].classList.add('show');
 
 
-        /*
-        leftDom.classList.remuve('hidden');
+      
+        leftDom.classList.remove('none');
 
         if (attiva == imgList.length - 1){
-            rightDom.classList.add('hidden');
+            rightDom.classList.add('none');
         }
-        */
+     
     }
 );
+
 
 const leftDom = document.querySelector('.left');
 
@@ -53,18 +54,18 @@ leftDom.addEventListener('click',
     function () {
 
 
-        imgList[attiva].classList.remuve('show');
+        imgList[attiva].classList.remove('show');
         attiva--;
         imgList[attiva].classList.add('show');
 
 
-        /*
-        rightDom.classList.remuve('hidden');
+ 
+        rightDom.classList.remove('none');
 
         if (attiva == 0){
-            leftDom.classList.add('hidden');
+            leftDom.classList.add('none');
         }
-        */
+  
 
     }
 );
