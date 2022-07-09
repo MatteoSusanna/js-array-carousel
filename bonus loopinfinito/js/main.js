@@ -27,19 +27,31 @@ imgList[attiva].classList.add('show');
 const downDom = document.querySelector('.down');
 
 downDom.addEventListener('click',
-    function () {         
+    function () {   
+        
 
         imgList[attiva].classList.remove('show');
+
         attiva++;
+
+        if(attiva >= imgList.length){
+            attiva = 0;
+            imgList[4].classList.remove('show');
+        }
+
         imgList[attiva].classList.add('show');
 
 
+        
+
+        
+        /*
         upDom.classList.remove('none');
 
         if (attiva == imgList.length - 1){
             downDom.classList.add('none');
         }
-
+        */
         
     }
 );
@@ -54,16 +66,21 @@ upDom.addEventListener('click',
         imgList[attiva].classList.remove('show');
         attiva--;
 
+        if(attiva < 0){
+            attiva = 4;
+
+        }
+
         imgList[attiva].classList.add('show');
 
 
-
+/*
         downDom.classList.remove('none');
 
         if (attiva == 0){
             upDom.classList.add('none');
         }
-
+*/
 
     }
 );
