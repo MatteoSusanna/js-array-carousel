@@ -36,7 +36,6 @@ downDom.addEventListener('click',
 
         if(attiva >= imgList.length){
             attiva = 0;
-            imgList[4].classList.remove('show');
         }
 
         imgList[attiva].classList.add('show');
